@@ -37,6 +37,7 @@ body {
 	width: 100%;
 	height: 150px;
 	border-radius: 25px;
+	background-color: red;
 	margin: 20px 0;
 }
 
@@ -168,7 +169,7 @@ body {
 	width: 100%;
 	height: 100%;
 	border-radius: 25px;
-	padding: 35px;
+	padding: 20px;
 }
 
 .newsBox {
@@ -180,7 +181,7 @@ body {
 	height: 137px;
 	border-radius: 25px;
 	border: 2px solid #000;
-	margin-right: 35px;
+	margin-right: 20px;
 }
 
 .newsBoxInfo {
@@ -188,6 +189,7 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	font-size: 16px;
+	text-align: justify;
 }
 
 .newsBoxTitle {
@@ -198,11 +200,65 @@ body {
 .newsBoxDate {
 	padding: 7px 12px;
 	color: #2E54A9;
-	border: 2px solid #2E54A9;
-	border-radius: 25px;
 	margin-top: 5px;
 	width: 120px;
 	text-align: center;
+	align-self: flex-end;
+}
+
+.newsBox.elBlock {
+	margin-bottom: 20px;
+}
+
+.NewsPage {
+
+}
+
+.NewsPage > img {
+	width: 100%;
+	height: 390px;
+	border-radius: 25px;
+	background-color: #2E54A9;
+}
+
+.NewsPage > span {
+	color: #2E54A9;
+	font-size: 36px;
+}
+
+.NewsPage > p,
+.NewsPage-bottom > span {
+	color: #2E54A9;
+	font-size: 20px;
+	text-align: justify;
+}
+
+.NewsPage-bottom {
+	display: flex;
+	justify-content: space-between;
+}
+
+.NewsPage-bottom > div {
+	width: 482px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.NewsPage-bottom > div > button {
+	padding: 7px 12px;
+	min-width: 236px;
+	max-width: 236px;
+	height: 39px;
+	border: 2px solid #2E54A9;
+	background-color: #fff;
+	border-radius: 25px;
+	color: #2E54A9;
+	font-size: 20px;
+	cursor: pointer;
+}
+.NewsPage-bottom > div > button:hover {
+	background-color: #2E54A9;
+	color: #fff;
 }
 
 .libList {
@@ -277,6 +333,7 @@ body {
 	bottom: 0;
 	border-radius: 25px;
 	margin-top: 5px;
+	text-align: justify;
 }
 
 .section__dep {
@@ -296,6 +353,7 @@ body {
 	flex-direction: column;
 	width: calc(60% - 25px);
 	color: #2E54A9;
+	text-align: justify;
 }
 
 .depBox {
@@ -338,6 +396,7 @@ body {
 	color: #3158B0;
 	display: flex;
 	flex-direction: column;
+	text-align: justify;
 }
 
 .pagination {

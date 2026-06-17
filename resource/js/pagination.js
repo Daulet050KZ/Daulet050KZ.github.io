@@ -41,7 +41,7 @@
 // });
 
 
-const items = document.querySelectorAll('.elBook') // элементы, которые делим по страницам
+const items = document.querySelectorAll('.elBlock') // элементы, которые делим по страницам
 const itemsPerPage = 10 // сколько элементов на одной странице
 
 const pageLeft = document.getElementById('pageLeft')
