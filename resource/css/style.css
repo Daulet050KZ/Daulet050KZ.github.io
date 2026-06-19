@@ -375,9 +375,10 @@ a[href="/Application.html"]:hover {
 }
 
 .depBox {
-	background-color: #E6EAF5;
+	background-color: #fff;
 	margin-bottom: 10px;
 	padding: 7px 12px;
+	border: 2px solid #2E54A9;
 	border-radius: 25px;
 	cursor: pointer;
 	font-size: 16px;
