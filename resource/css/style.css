@@ -58,6 +58,23 @@ body {
 	cursor: pointer;
 }
 
+a[href="/Application.html"] {
+	border: 2px solid #C11B1B;
+	color: #C11B1B;
+}
+
+a[href="/Application.html"].link.active {
+	border: 2px solid #C11B1B;
+	background-color: #C11B1B;
+	color: #fff;
+}
+
+a[href="/Application.html"]:hover {
+	border: 2px solid #C11B1B;
+	background-color: #C11B1B;
+	color: #fff;
+}
+
 .link.active,
 .BNB.active,
 .link:hover,
@@ -213,11 +230,13 @@ body {
 
 }
 
-.NewsPage > img {
+.NewsPage > img,
+.YandexMap {
 	width: 100%;
 	height: 390px;
 	border-radius: 25px;
-	background-color: #2E54A9;
+	border: 2px solid #2E54A9;
+/*	background-color: #2E54A9;*/
 }
 
 .NewsPage > span {
@@ -465,7 +484,8 @@ body {
 	margin-top: 10px;
 }
 
-#Application input::placeholder {
+#Application input::placeholder,
+#Application textarea::placeholder {
 	color: #B5B5B5;
 }
 
