@@ -564,7 +564,7 @@ a[href="/Application.html"]:hover {
 }
 
 #submitBtn {
-	width: 400px;
+	width: 320px;
 	height: 50px;
 	font-size: 24px;
 	background-color: #3157AE;
@@ -1021,7 +1021,7 @@ footer > span {
 	}
 
 	.downloadFiles > div > img {
-		height: 100%;
+		width: 100%;
 	}
 
 	.AppInfo {
