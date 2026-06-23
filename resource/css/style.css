@@ -383,7 +383,7 @@ a[href="/Application.html"]:hover {
 .section__dep-right {
 	display: flex;
 	flex-direction: column;
-	width: calc(60% - 25px);
+	width: calc(60% - 5px);
 	color: #2E54A9;
 	text-align: justify;
 }
