@@ -4,6 +4,7 @@
 	box-sizing: border-box;
 	font-family: "Arial";
 	transition: 0.3s;
+/*	outline: 1px solid red;*/
 }
 
 body {
@@ -328,9 +329,9 @@ a[href="/Application.html"]:hover {
 }
 
 .listEl > img {
-    width: 100%;
-    max-width: 197px;
-    aspect-ratio: 197 / 253;
+    width: 197px;
+    height: 253px;
+/*    aspect-ratio: 197 / 253;*/
     object-fit: cover;
     margin-bottom: 10px;
 }
@@ -561,6 +562,7 @@ a[href="/Application.html"]:hover {
 
 .downloadFiles > div > img {
 	height: 130%;
+	pointer-events: none;
 }
 
 #submitBtn {
@@ -602,12 +604,12 @@ a[href="/Application.html"]:hover {
 .AppInfo > div > div > img {
 	width: 44px;
 	height: 44px;
-	margin-left: 10px;
+	margin-right: 10px;
 }
 
 .AppInfo > div > div > span {
 	font-size: 24px;
-	width: 40px;
+	min-width: 40px;
 	height: 40px;
 	display: flex;
 	justify-content: center;
@@ -835,70 +837,69 @@ footer > span {
 		padding: 0 10px;
 	}
 
+	.section-top > span {
+		font-size: 24px;
+	}
+
+	.sectionArrows {
+		display: none;
+	}
 
 	.section__1 {
 		padding: 0px 10px;
 	}
 
-	.bannerInteractive {
-		width: 100%;
-		height: 100%;
-		position: absolute;
-		top: 0;
-		left: 0;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
-
 	.bannerArrows {
-		width: 100%;
-		display: flex;
-		justify-content: space-between;
-		padding: 0 25px;
-		align-items: center;
-	}
-
-	.bannerArrows > i {
-		background-color: #2E54A9;
-		color: #fff;
-		width: 50px;
-		height: 50px;
-		border-radius: 50%;
-		font-size: 40px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		opacity: 0.7;
-		cursor: pointer;
-		transition: 0.3s;
-	}
-
-	.bannerArrows > i:hover {
-		opacity: 1;
+		display: none;
 	}
 
 	.BanNavButtons {
-		width: 100%;
-		display: flex;
-		justify-content: center;
-		position: absolute;
-		bottom: 10px;
+		bottom: 5px;
 	}
 	.BNB {
-		width: 20px;
-		height: 20px;
-		border-radius: 50%;
-		background-color: #999;
-		margin: 0 2.5px;
-		cursor: pointer;
+		width: 15px;
+		height: 15px;
 	}
 
-	.elBook {
+	.elBlock {
 		display: flex;
+		flex-direction: column;
 		margin-bottom: 20px;
 		width: 100%;
+	}
+
+	.elBlock > img,
+	.newsBox > img {
+		margin-bottom: 10px;
+	}
+
+	.newsBox {
+		flex-direction: column;
+	}
+
+	.libList {
+		overflow-x: auto;
+	}
+
+	.listEl {
+		/*display: flex;
+		flex-direction: column;
+		text-align: center;
+		margin: 10px;*/
+		min-width: 98.5px;
+		height: auto;
+/*		overflow-x: hidden;*/
+		width: 100%;
+	}
+
+	.listEl > img {
+		width: 98.5px;
+		height: 126.5px;
+	}
+
+	.listEl > span {
+		color: #2E54A9;
+		font-size: 16px;
 	}
 
 	footer {
@@ -1041,6 +1042,31 @@ footer > span {
 		font-size: 24px;
 		margin-top: 0;
 	}
+
+	.AppInfo > div > div > span {
+		margin-right: 10px;
+	}
+
+	.AppInfo > div > div > img {
+		width: 36px;
+		height: 36px;
+		margin-right: 10px;
+	}
+
+	.AppInfo > div > div > span {
+		min-width: 32px;
+		height: 32px;
+		margin-right: 10px;
+	}
+
+	.section__dep {
+		flex-direction: column;
+	}
+
+	.section__dep-left,
+	.section__dep-right {
+		width: 100%;
+	}
 }
 
 @media (max-width: 480px){
@@ -1048,13 +1074,18 @@ footer > span {
 		max-width: 480px;
 	}
 
-.AppInfo {
+	.section__3,
+	.section__4 {
+		overflow-x: hidden;
+	}
+
+
+	.AppInfo {
 		width: 100%;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 	}
-
 
 	.AppInfo > div {
 		width: 100%;
@@ -1067,5 +1098,4 @@ footer > span {
 		font-size: 24px;
 		margin-top: 0;
 	}
-
 }
