@@ -39,6 +39,17 @@ body {
 	justify-content: space-between;
 }
 
+.contact {
+	display: flex;
+	align-items: center;
+}
+
+.contact > span {
+	font-size: 24px;
+	color: #2E54A9; 
+	margin-left: 10px;
+}
+
 .banner {
 	width: 100%;
 	margin: 20px 0;
@@ -201,11 +212,17 @@ a[href="/Application.html"]:hover {
 
 .newsBox {
 	display: flex;
+	border-top: 2px dashed #999;
+	padding-top: 20px;
+}
+
+.newsBox:first-child {
+	border-top: none;
 }
 
 .newsBox > img {
 	width: 222px;
-	height: 137px;
+	aspect-ratio: 16 / 9;
 	border-radius: 25px;
 	border: 2px solid #000;
 	margin-right: 20px;
@@ -224,10 +241,13 @@ a[href="/Application.html"]:hover {
 	font-weight: 700;
 }
 
+.newsBoxDesc {
+	margin: 10px 0;
+}
+
 .newsBoxDate {
 	padding: 7px 12px;
 	color: #2E54A9;
-	margin-top: 5px;
 	width: 120px;
 	text-align: center;
 	align-self: flex-end;
@@ -244,7 +264,8 @@ a[href="/Application.html"]:hover {
 .NewsPage > img,
 .YandexMap {
 	width: 100%;
-	height: 390px;
+/*	height: 390px;*/
+	aspect-ratio: 1480 / 390;
 	border-radius: 25px;
 	border: 2px solid #2E54A9;
 /*	background-color: #2E54A9;*/
@@ -264,19 +285,21 @@ a[href="/Application.html"]:hover {
 
 .NewsPage-bottom {
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
 }
 
 .NewsPage-bottom > div {
-	width: 482px;
+	width: 405px;
 	display: flex;
 	justify-content: space-between;
+	margin-top: 10px;
+
 }
 
 .NewsPage-bottom > div > button {
 	padding: 7px 12px;
-	min-width: 236px;
-	max-width: 236px;
+	width: 197.5px;
 	height: 39px;
 	border: 2px solid #2E54A9;
 	background-color: #fff;
@@ -285,6 +308,7 @@ a[href="/Application.html"]:hover {
 	font-size: 20px;
 	cursor: pointer;
 }
+
 .NewsPage-bottom > div > button:hover {
 	background-color: #2E54A9;
 	color: #fff;
@@ -811,6 +835,15 @@ footer > span {
 	}
 
 	.header__1 {
+		width: 100%;
+		height: 60px;
+		margin-top: 10px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.contact, .socWeb {
 		display: none;
 	}
 
@@ -829,7 +862,6 @@ footer > span {
 	}
 
 	.banner {
-		margin-top: 50px;
 	}
 
 	.section-top {
@@ -882,13 +914,8 @@ footer > span {
 	}
 
 	.listEl {
-		/*display: flex;
-		flex-direction: column;
-		text-align: center;
-		margin: 10px;*/
 		min-width: 98.5px;
 		height: auto;
-/*		overflow-x: hidden;*/
 		width: 100%;
 	}
 
@@ -947,38 +974,11 @@ footer > span {
 		height: auto;
 	}
 
-	#Application > span {
-		font-size: 24px;
-		color: #345CB5;
-		margin: 10px 0;
-	}
-
-	#Application input,
-	#Application textarea {
-		background-color: #fff;
-		font-size: 16px;
-		padding: 10px 15px;
-		border: 2px solid #3157AE;
-		border-radius: 25px;
-	}
-
-	#Application input::placeholder,
-	#Application textarea::placeholder {
-		color: #B5B5B5;
-	}
-
 	.threeField,
 	.soloField {
 		display: flex;
 		flex-direction: column;
 		margin-bottom: 10px;
-	}
-
-	.threeField span,
-	.soloField span{
-		font-size: 20px;
-		color: #4D4D4D;
-		margin: 10px 0;
 	}
 
 	.threeField > div,
@@ -1097,5 +1097,9 @@ footer > span {
 		color: #345CB5;
 		font-size: 24px;
 		margin-top: 0;
+	}
+	
+	.newsBox > img {
+		width: 100%;
 	}
 }
