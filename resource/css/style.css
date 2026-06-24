@@ -50,6 +50,20 @@ body {
 	margin-left: 10px;
 }
 
+.socWeb {
+	justify-content: center;
+}
+
+.socWeb > a > img {
+	width: 40px;
+	height: 40px;
+}
+
+.socWeb > a:nth-child(2) > img {
+	margin: 0 5px;
+}
+
+
 .banner {
 	width: 100%;
 	margin: 20px 0;
@@ -942,10 +956,11 @@ footer > span {
 		color: #fff;
 		margin: 0 auto;
 		overflow: hidden;
+		display: flex;
 	}
 
 	footer > div > img {
-		width: 190px;
+		width: calc(50% - 10px);
 	}
 
 	footer > span {
@@ -953,8 +968,8 @@ footer > span {
 	}
 
 	.footerContants > a > img {
-		width: 50px;
-		height: 50px;
+		width: 30px;
+		height: 30px;
 	}
 
 	.AppPage {
@@ -1115,5 +1130,9 @@ footer > span {
 
 	.NewsPage-bottom > div > button {
 		width: calc(100% / 2 - 5px);
+	}
+
+	.footerContants {
+		display: none;
 	}
 }
