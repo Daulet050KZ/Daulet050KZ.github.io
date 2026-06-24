@@ -231,12 +231,6 @@ a[href="/Application.html"]:hover {
 
 .newsBox {
 	display: flex;
-	border-top: 2px dashed #999;
-	padding-top: 20px;
-}
-
-.newsBox:first-child {
-	border-top: none;
 }
 
 .newsBox > img {
