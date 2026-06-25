@@ -162,6 +162,7 @@ a[href="/Application.html"]:hover {
 	position: absolute;
 	top: 0;
 	left: 0;
+	z-index: 100;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -218,7 +219,10 @@ a[href="/Application.html"]:hover {
 
 .banners > img {
 	width: 100%;
+	aspect-ratio: 1480 / 400;
 	border-radius: 25px;
+	top: 0;
+	left: 0;
 }
 
 .section__2-block {
@@ -285,21 +289,29 @@ a[href="/Application.html"]:hover {
 
 .newsImgs {
 	display: flex;
-	justify-content: space-between;
-	width: 70%;
+	justify-content: center;
+	width: calc(70% + 10px);
 	margin-top: 10px;
 	margin: 10px auto 0 auto;
 }
 
 .newsImgs > img {
-	width: calc(100% / 4 - 5px);
+	width: calc(100% / 6 - 10px);
+	margin: 0 5px;
 	display: flex;
 	aspect-ratio: 16 / 9;
 	border-radius: 25px;
 	border: 2px solid #2E54A9;
-
+	cursor: pointer;
 }
 
+.newsImgs > img:first-child {
+	margin: 0 5px 0 0;
+}
+
+.newsImgs > img:last-child {
+	margin: 0 0 0 5px;
+}
 
 .NewsPage > span {
 	color: #2E54A9;
