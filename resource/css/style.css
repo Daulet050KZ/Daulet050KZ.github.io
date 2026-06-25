@@ -463,13 +463,18 @@ a[href="/Application.html"]:hover {
 
 .depBox {
 	background-color: #fff;
-	margin-bottom: 10px;
+	margin: 0 5px 10px 5px;
 	padding: 7px 12px;
 	border: 2px solid #2E54A9;
 	border-radius: 25px;
 	cursor: pointer;
 	font-size: 16px;
 	color: #345CB5;
+	width: calc(100% / 5 - 10px);
+}
+
+.depBox:first-child {
+	margin: 0 5px 10px 0;
 }
 
 .depBox.active {
@@ -915,7 +920,7 @@ footer > span {
 	}
 
 	.section__1 {
-		padding: 0px 10px;
+/*		padding: 0px 10px;*/
 	}
 
 	.bannerArrows {
@@ -1109,6 +1114,11 @@ footer > span {
 	.section__dep-left,
 	.section__dep-right {
 		width: 100%;
+	}
+
+	.depBox {
+		width: 100%;
+		margin: 0 0 10px 0;
 	}
 }
 
