@@ -2,9 +2,14 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: "Arial";
+	font-family: "Roboto", sans-serif;
 	transition: 0.3s;
 /*	outline: 1px solid red;*/
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(/resource/Roboto/Roboto.ttf) format('truetype');
 }
 
 body {
@@ -95,6 +100,10 @@ body {
 	cursor: pointer;
 }
 
+button.link {
+	background-color: #fff;
+}
+
 a[href="/Application.html"] {
 	border: 2px solid #C11B1B;
 	color: #C11B1B;
@@ -141,7 +150,6 @@ a[href="/Application.html"]:hover {
 }
 
 .section-top > span {
-	font-family: "Arial";
 	font-size: 40px;
 	color: #345CB5;
 }
@@ -242,16 +250,16 @@ a[href="/Application.html"]:hover {
 	width: 222px;
 	aspect-ratio: 16 / 9;
 	border-radius: 25px;
-	border: 2px solid #000;
+	border: 2px solid #2E54A9;
 	margin-right: 20px;
 }
 
 .newsBoxInfo {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 	font-size: 16px;
 	text-align: justify;
+	width: 100%;
 }
 
 .newsBoxTitle {
@@ -269,6 +277,7 @@ a[href="/Application.html"]:hover {
 	width: 120px;
 	text-align: center;
 	align-self: flex-end;
+	margin-top: auto;
 }
 
 .newsBox.elBlock {
@@ -290,7 +299,6 @@ a[href="/Application.html"]:hover {
 
 .newsImgs {
 	display: flex;
-	justify-content: center;
 	width: calc(70% + 10px);
 	margin: 10px auto 0 auto;
 }
@@ -473,13 +481,18 @@ a[href="/Application.html"]:hover {
 	width: calc(100% / 5 - 10px);
 }
 
-.depBox:first-child {
-	margin: 0 5px 10px 0;
+.depBox > span {
+	width: 100%;
 }
 
 .depBox.active {
 	background-color: #2E54A9;
 	color: #fff;
+}
+
+.hidden,
+.elBlock.hidden {
+    display: none;
 }
 
 .bookCatalog {
@@ -508,6 +521,10 @@ a[href="/Application.html"]:hover {
 	display: flex;
 	flex-direction: column;
 	text-align: justify;
+}
+
+.elBookInfo > a {
+	margin-top: auto;
 }
 
 .pagination {
@@ -1120,6 +1137,7 @@ footer > span {
 		width: 100%;
 		margin: 0 0 10px 0;
 	}
+
 }
 
 @media (max-width: 480px){

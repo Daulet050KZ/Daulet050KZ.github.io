@@ -1,5 +1,5 @@
-const items = document.querySelectorAll('.elBlock') // элементы, которые делим по страницам
-const itemsPerPage = 10 // сколько элементов на одной странице
+let items = []
+const itemsPerPage = 10
 
 const pageLeft = document.getElementById('pageLeft')
 const pageRight = document.getElementById('pageRight')
@@ -12,9 +12,22 @@ const pageButtons = [
 	document.getElementById('pageBtn-5')
 ]
 
-const totalPages = Math.ceil(items.length / itemsPerPage)
+let totalPages = 0
 
 let currentPage = getPageFromUrl()
+
+function initPagination() {
+
+    items = document.querySelectorAll('.elBlock')
+
+    totalPages = Math.ceil(items.length / itemsPerPage)
+
+    currentPage = getPageFromUrl()
+
+    if (totalPages > 0) {
+        showPage(currentPage)
+    }
+}
 
 function getPageFromUrl() {
 	const params = new URLSearchParams(window.location.search)
@@ -98,4 +111,3 @@ window.addEventListener('popstate', function() {
 	showPage(currentPage)
 })
 
-showPage(currentPage)

@@ -3,13 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>О нас</title>
+	<title data-lang='titleAboutUs'>О нас</title>
 	<link rel="icon" href="/resource/icon/logo.ico">
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.2/css/all.css">
 
 	<link rel="stylesheet" href="/resource/css/style.css">
-
 </head>
 <body>
 	<div class="container">
@@ -20,8 +19,8 @@
 
 			<div class="header__1">
 				<div class="selectLang" style="display:flex;justify-content: space-between;width:145px;">
-					<a href="#" class="link active" style="margin: 0;">Рус</a>
-					<a href="#" class="link" style="margin: 0;">Кыр</a>
+					<button onclick="setLanguage('RU')" class="link active RU" style="margin: 0;">Рус</button>
+					<button onclick="setLanguage('KY')" class="link KY" style="margin: 0;">Кыр</button>
 				</div>
 				<div class="contact">
 					<img src="/resource/icon/phone.png" alt="" class="icon">
@@ -36,27 +35,27 @@
 				</div>
 			</div>
 			<div class="header__nav">
-				<a href="/index.html" class="link">Главная</a>
-				<a href="/templates/About-us/index.html" class="link active">О нас</a>
-				<a href="/templates/Departments/index.html" class="link">Отделы</a>
-				<a href="/templates/Book-catalog/index.html" class="link">Книги</a>
-				<a href="/templates/Chronicles/index.html" class="link">Летописи</a>
-				<a href="/templates/Online-services/index.html" class="link">Online услуги</a>
-				<a href="/templates/News/index.html" class="link">Новости</a>
-				<a href="/Contacts.html" class="link">Контакты</a>
+				<a data-lang="nav-Main"	href="/index.html" class="link"></a>
+				<a data-lang="nav-AboutUs"	href="/templates/About-us/index.html" class="link active"></a>
+				<a data-lang="nav-Departments"	href="/templates/Departments/index.html" class="link"></a>
+				<a data-lang="nav-Book"	href="/templates/Book-catalog/index.html" class="link"></a>
+				<a data-lang="nav-Chronicle"	href="/templates/Chronicles/index.html" class="link"></a>
+				<a data-lang="nav-OnlineService"	href="/templates/Online-services/index.html" class="link"></a>
+				<a data-lang="nav-News"	href="/templates/News/index.html" class="link"></a>
+				<a data-lang="nav-Contacts"	href="/Contacts.html" class="link"></a>
 				<!-- <a href="/Application.html" class="link">Подача заявки</a> -->
 			</div>
 		</div>
 		<div id="burger">
 			<div>
-				<a href="/index.html" class="link">Главная</a>
-				<a href="/templates/About-us/index.html" class="link active">О нас</a>
-				<a href="/templates/Departments/index.html" class="link">Отделы</a>
-				<a href="/templates/Book-catalog/index.html" class="link">Книги</a>
-				<a href="/templates/Chronicles/index.html" class="link">Летописи</a>
-				<a href="/templates/Online-services/index.html" class="link">Online услуги</a>
-				<a href="/templates/News/index.html" class="link">Новости</a>
-				<a href="/Contacts.html" class="link">Контакты</a>
+				<a data-lang="nav-Main"	href="/index.html" class="link"></a>
+				<a data-lang="nav-AboutUs"	href="/templates/About-us/index.html" class="link active"></a>
+				<a data-lang="nav-Departments"	href="/templates/Departments/index.html" class="link"></a>
+				<a data-lang="nav-Book"	href="/templates/Book-catalog/index.html" class="link"></a>
+				<a data-lang="nav-Chronicle"	href="/templates/Chronicles/index.html" class="link"></a>
+				<a data-lang="nav-OnlineService"	href="/templates/Online-services/index.html" class="link"></a>
+				<a data-lang="nav-News"	href="/templates/News/index.html" class="link"></a>
+				<a data-lang="nav-Contacts"	href="/Contacts.html" class="link"></a>
 				<!-- <a href="/Application.html" class="link">Подача заявки</a> -->
 			</div>
 
@@ -73,190 +72,7 @@
 
 		<div class="main">
 
-			<section class="section__2">
-				<div class="section-top" style="margin-bottom: 10px;">
-					<span style="font-size: 24px;">Из истории Книжной палаты</span>
-				</div>
-
-				<p style="color: #222; text-align: justify;">
-					Книжная палата Кыргызской Республики организована согласно Постановления Совета Народных Комиссаров Киргизской ССР от 1 января 1937 года, как Государственная книжная палата. Свою деятельность начала с 1 января 1939 года. На неё были возложены определённые задачи, которые включают в себя: регистрацию всех печатных изданий, выходящих на территории Кыргызстана, сбор, контроль, хранение обязательных экземпляров и выпуск библиографических указателей о национальной печати.
-					<br>
-					<br>
-					В настоящее время Книжная палата является без аналогов, информационно-библиографическим учреждением с уникальным национальным архивом, в котором на вечном хранении находятся более 2,1 млн единственных экземпляров изданий кыргызской национальной печати.
-					<br>
-					<br>
-					29 октября 1997 года Законодательным собранием Жогорку Кенеша принят Закон «Об обязательном экземпляре документов». На основании этого Закона Книжная палата расширила свои функции в области формирования системы обязательного экземпляра и теперь выступает не только в роли регистратора, информатора, хранителя, но и является основным распределительным центром между крупнейшими библиотеками и научно-информационными учреждениями.
-				</p>
-
-				<div class="sectionPadding"></div>
-
-				<div class="section-top" style="margin-bottom: 10px;">
-					<span style="font-size: 24px;">Основные направления деятельности</span>
-				</div>
-
-				<p style="color: #222;">
-					• Приём, учёт и контроль за доставкой обязательных экземпляров изданий и их распределение<br>
-					• Национальная библиография<br>
-					• Статистика, пополнение и хранение архива национальных изданий<br>
-					• Каталогизация и стандартизация информационной и библиографической документации<br>
-				</p>
-
-				<div class="sectionPadding"></div>
-
-				<div class="section-top" style="margin-bottom: 10px;">
-					<span style="font-size: 24px;">Нами выпускаются</span>
-				</div>
-
-				<p style="color: #222;">
-					• Ретроспективный библиографический указатель «Печать Кыргызстана»<br>
-					• Текущие государственные библиографические указатели «Летопись печати Кыргызской Республики», включающие разделы:<br>
-					    • Книжная летопись<br>
-					    • Летопись журнальных статей<br>
-					    • Летопись газетных статей<br>
-					    • Летопись изоизданий<br>
-					    • Нотная летопись<br>
-					    • Летопись рецензий<br>
-					    • Летопись периодических и продолжающихся изданий<br>
-					    • Указатель библиографических пособий<br>
-					Статистический сборник «Печать Кыргызской Республики»<br>
-				</p>
-
-				<div class="sectionPadding"></div>
-
-				<div class="section-top" style="margin-bottom: 10px;">
-					<span style="font-size: 24px;">Наши услуги</span>
-				</div>
-
-				<p style="color: #222;">
-					• Присваиваем международные стандартные книжные номера (ISBN)<br>
-					• Выдаём библиографические справки<br>
-					• Оказываем методические консультации<br>
-					• Оформляем рукописи<br>
-					• Предоставляем статистические данные о выпуске печатной продукции<br>
-				</p>
-
-				<div class="sectionPadding"></div>
-
-				<div class="section-top" style="margin-bottom: 10px;">
-					<span style="font-size: 24px;">Уважаемые наши издатели и читатели!</span>
-				</div>
-
-				<p style="color: #222;">
-					Вы можете обратиться к нам, если:<br>
-					• Вас интересуют подборки библиографических редкостей<br>
-					• Вам необходимы ксерокопии изданий, имеющихся в архиве печати Книжной палаты<br>
-					• Вы хотите получить списки литературы по различной тематике<br>
-					• Вам нужны сведения о публикациях в газетах и журналах национальной печати<br>
-					• Вы издаёте книги, но затрудняетесь в оформлении<br>
-					• Вам необходимо составить сборник по определённой тематике<br>
-					• Вам необходимо обратиться в Книжную палату Кыргызской Республики.<br>
-				</p>
-
-				<div class="sectionPadding"></div>
-
-				<div class="section-top" style="margin-bottom: 10px;">
-					<span style="font-size: 24px;" class="link" id="interactiveBtn">Структура Книжной палаты Кыргызской Республики</span>
-				</div>
-
-				<div id="interactiveBlock" style="display: none;">
-					
-					<div class="sectionPadding"></div>
-
-					<div class="section-top" style="margin-bottom: 10px;">
-						<span style="font-size: 24px;">Руководство</span>
-					</div>
-
-					<p style="color: #222;">
-						Директор<br>
-						Заместитель директора<br>
-						Заместитель директора<br>
-						Главный бухгалтер<br>
-					</p>
-
-					<br>
-
-					<div class="section-top" style="margin-bottom: 10px;">
-						<span style="font-size: 24px;">Основной персонал</span>
-					</div>
-
-					<p style="color: #222;">
-						Бухгалтер<br>
-						Инспектор отдела кадров<br>
-						Специалист-библиограф<br>
-						Инженер по эксплуатации оборудования<br>
-					</p>
-
-					<br>
-
-					<div class="section-top" style="margin-bottom: 0px;">
-						<span style="font-size: 24px;">Отделы</span>
-					</div>
-					
-					<br>
-
-					<div class="section-top" style="margin-bottom: 10px;">
-						<span style="font-size: 24px;">Отдел приёма обязательного экземпляра и книгораспространения</span>
-					</div>
-
-					<p style="color: #222;">
-						Заведующий отделом<br>
-						Главный библиограф<br>
-						Главный библиограф<br>
-						Ведущий библиограф<br>
-					</p>
-					
-					<br>
-
-					<div class="section-top" style="margin-bottom: 10px;">
-						<span style="font-size: 24px;">Отдел национальной библиографии</span>
-					</div>
-
-					<p style="color: #222;">
-						Заведующий отделом<br>
-						Главный библиограф<br>
-						Главный библиограф<br>
-						Ведущий библиограф<br>
-					</p>
-					
-					<br>
-
-					<div class="section-top" style="margin-bottom: 10px;">
-						<span style="font-size: 24px;">Отдел каталогизации и стандартизации изданий</span>
-					</div>
-
-					<p style="color: #222;">
-						Заведующий отделом<br>
-						Главный библиограф<br>
-						Главный библиограф<br>
-						Ведущий библиограф<br>
-					</p>
-					
-					<br>
-
-					<div class="section-top" style="margin-bottom: 10px;">
-						<span style="font-size: 24px;">Отдел ретроспекции, статистики и архива печати</span>
-					</div>
-
-					<p style="color: #222;">
-						Заведующий отделом<br>
-						Главный библиограф<br>
-						Главный библиограф<br>
-						Ведущий библиограф<br>
-					</p>
-					
-					<br>
-
-					<div class="section-top" style="margin-bottom: 10px;">
-						<span style="font-size: 24px;">Отдел международного сотрудничества</span>
-					</div>
-
-					<p style="color: #222;">
-						Заведующий отделом<br>
-						Главный библиограф<br>
-						Главный библиограф<br>
-						Ведущий библиограф<br>
-					</p>
-				</div>
+			<section class="section__2" id="BlockContent">
 
 			</section>
 
@@ -287,22 +103,15 @@
 		<span>© 2026 Государственная книжная палата при Министерстве культуры, информации и молодежной политики Кыргызской Республики</span>
 	</footer>
 
+	<script src="/resource/js/lang.js"></script>
+
 	<script>
-		let blockOpen = false;
+		async function loadStaff(lang) {
+		    const response = await fetch(`/resource/lang/AboutUs-${lang}.html`);
+		    const html = await response.text();
 
-
-		document.getElementById('interactiveBtn').addEventListener('click', function() {
-
-			document.getElementById('interactiveBlock').style.display = ''
-			document.getElementById('interactiveBtn').classList.toggle('active')
-			if (blockOpen) {
-				document.getElementById('interactiveBlock').style.display = 'none'
-				blockOpen = false;
-			}else{
-				document.getElementById('interactiveBlock').style.display = ''
-				blockOpen = true;
-			}
-		})
+		    document.getElementById('BlockContent').innerHTML = html;
+		}
 	</script>
 
 	<script src="/resource/js/burger.js"></script>

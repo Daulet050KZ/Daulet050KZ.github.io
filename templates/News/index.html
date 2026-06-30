@@ -4,13 +4,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Новости</title>
+	<title data-lang='titleNews'>Новости</title>
 	<link rel="icon" href="/resource/icon/logo.ico">
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.2/css/all.css">
 
 	<link rel="stylesheet" href="/resource/css/style.css">
-
 </head>
 <body>
 	<div class="container">
@@ -21,8 +20,8 @@
 
 			<div class="header__1">
 				<div class="selectLang" style="display:flex;justify-content: space-between;width:145px;">
-					<a href="#" class="link active" style="margin: 0;">Рус</a>
-					<a href="#" class="link" style="margin: 0;">Кыр</a>
+					<button onclick="setLanguage('RU')" class="link active RU" style="margin: 0;">Рус</button>
+					<button onclick="setLanguage('KY')" class="link KY" style="margin: 0;">Кыр</button>
 				</div>
 				<div class="contact">
 					<img src="/resource/icon/phone.png" alt="" class="icon">
@@ -37,27 +36,27 @@
 				</div>
 			</div>
 			<div class="header__nav">
-				<a href="/index.html" class="link">Главная</a>
-				<a href="/templates/About-us/index.html" class="link">О нас</a>
-				<a href="/templates/Departments/index.html" class="link">Отделы</a>
-				<a href="/templates/Book-catalog/index.html" class="link">Книги</a>
-				<a href="/templates/Chronicles/index.html" class="link">Летописи</a>
-				<a href="/templates/Online-services/index.html" class="link">Online услуги</a>
-				<a href="/templates/News/index.html" class="link active">Новости</a>
-				<a href="/Contacts.html" class="link">Контакты</a>
+				<a data-lang="nav-Main"	href="/index.html" class="link"></a>
+				<a data-lang="nav-AboutUs"	href="/templates/About-us/index.html" class="link"></a>
+				<a data-lang="nav-Departments"	href="/templates/Departments/index.html" class="link"></a>
+				<a data-lang="nav-Book"	href="/templates/Book-catalog/index.html" class="link"></a>
+				<a data-lang="nav-Chronicle"	href="/templates/Chronicles/index.html" class="link"></a>
+				<a data-lang="nav-OnlineService"	href="/templates/Online-services/index.html" class="link"></a>
+				<a data-lang="nav-News"	href="/templates/News/index.html" class="link active"></a>
+				<a data-lang="nav-Contacts"	href="/Contacts.html" class="link"></a>
 				<!-- <a href="/Application.html" class="link">Подача заявки</a> -->
 			</div>
 		</div>
 		<div id="burger">
 			<div>
-				<a href="/index.html" class="link">Главная</a>
-				<a href="/templates/About-us/index.html" class="link">О нас</a>
-				<a href="/templates/Departments/index.html" class="link">Отделы</a>
-				<a href="/templates/Book-catalog/index.html" class="link">Книги</a>
-				<a href="/templates/Chronicles/index.html" class="link">Летописи</a>
-				<a href="/templates/Online-services/index.html" class="link">Online услуги</a>
-				<a href="/templates/News/index.html" class="link active">Новости</a>
-				<a href="/Contacts.html" class="link">Контакты</a>
+				<a data-lang="nav-Main"	href="/index.html" class="link"></a>
+				<a data-lang="nav-AboutUs"	href="/templates/About-us/index.html" class="link"></a>
+				<a data-lang="nav-Departments"	href="/templates/Departments/index.html" class="link"></a>
+				<a data-lang="nav-Book"	href="/templates/Book-catalog/index.html" class="link"></a>
+				<a data-lang="nav-Chronicle"	href="/templates/Chronicles/index.html" class="link"></a>
+				<a data-lang="nav-OnlineService"	href="/templates/Online-services/index.html" class="link"></a>
+				<a data-lang="nav-News"	href="/templates/News/index.html" class="link active"></a>
+				<a data-lang="nav-Contacts"	href="/Contacts.html" class="link"></a>
 				<!-- <a href="/Application.html" class="link">Подача заявки</a> -->
 			</div>
 
@@ -73,97 +72,17 @@
 		</div>
 
 		<div class="main">
-
-					<div class="newsBox elBlock">
-						<img src="" alt="">
-						<div class="newsBoxInfo">
-							<span class="newsBoxTitle">Пушкин… Булгаков… Белинский…</span>
-							<p class="newsBoxDesc">В фондах Книжной палаты представлены произведения выдающихся классиков мировой литературы, среди которых Александр Пушкин, Михаил Булгаков, Лев Толстой, Антон Чехов и многие другие авторы. Их произведения продолжают вдохновлять читателей разных поколений и занимают особое место в культурном наследии человечества.</p>
-							<a href="News-page.html" class="newsBoxFull">Подробнее</a>
-							<span class="newsBoxDate">00.00.0000</span>
-						</div>
+			<div class="newsBlock">
+				<!-- <div class="newsBox elBlock">
+					<img src="" alt="">
+					<div class="newsBoxInfo">
+						<span class="newsBoxTitle">Пушкин… Булгаков… Белинский…</span>
+						<p class="newsBoxDesc">В фондах Книжной палаты представлены произведения выдающихся классиков мировой литературы, среди которых Александр Пушкин, Михаил Булгаков, Лев Толстой, Антон Чехов и многие другие авторы. Их произведения продолжают вдохновлять читателей разных поколений и занимают особое место в культурном наследии человечества.</p>
+						<a href="News-page.html" class="newsBoxFull">Подробнее</a>
+						<span class="newsBoxDate">00.00.0000</span>
 					</div>
-					<div class="newsBox elBlock">
-						<img src="" alt="">
-						<div class="newsBoxInfo">
-							<span class="newsBoxTitle">Пушкин… Булгаков… Белинский…</span>
-							<p class="newsBoxDesc">В фондах Книжной палаты представлены произведения выдающихся классиков мировой литературы, среди которых Александр Пушкин, Михаил Булгаков, Лев Толстой, Антон Чехов и многие другие авторы. Их произведения продолжают вдохновлять читателей разных поколений и занимают особое место в культурном наследии человечества.</p>
-							<a href="" class="newsBoxFull">Подробнее</a>
-							<span class="newsBoxDate">00.00.0000</span>
-						</div>
-					</div>
-					<div class="newsBox elBlock">
-						<img src="" alt="">
-						<div class="newsBoxInfo">
-							<span class="newsBoxTitle">Пушкин… Булгаков… Белинский…</span>
-							<p class="newsBoxDesc">В фондах Книжной палаты представлены произведения выдающихся классиков мировой литературы, среди которых Александр Пушкин, Михаил Булгаков, Лев Толстой, Антон Чехов и многие другие авторы. Их произведения продолжают вдохновлять читателей разных поколений и занимают особое место в культурном наследии человечества.</p>
-							<a href="" class="newsBoxFull">Подробнее</a>
-							<span class="newsBoxDate">00.00.0000</span>
-						</div>
-					</div>
-					<div class="newsBox elBlock">
-						<img src="" alt="">
-						<div class="newsBoxInfo">
-							<span class="newsBoxTitle">Пушкин… Булгаков… Белинский…</span>
-							<p class="newsBoxDesc">В фондах Книжной палаты представлены произведения выдающихся классиков мировой литературы, среди которых Александр Пушкин, Михаил Булгаков, Лев Толстой, Антон Чехов и многие другие авторы. Их произведения продолжают вдохновлять читателей разных поколений и занимают особое место в культурном наследии человечества.</p>
-							<a href="" class="newsBoxFull">Подробнее</a>
-							<span class="newsBoxDate">00.00.0000</span>
-						</div>
-					</div>
-					<div class="newsBox elBlock">
-						<img src="" alt="">
-						<div class="newsBoxInfo">
-							<span class="newsBoxTitle">Пушкин… Булгаков… Белинский…</span>
-							<p class="newsBoxDesc">В фондах Книжной палаты представлены произведения выдающихся классиков мировой литературы, среди которых Александр Пушкин, Михаил Булгаков, Лев Толстой, Антон Чехов и многие другие авторы. Их произведения продолжают вдохновлять читателей разных поколений и занимают особое место в культурном наследии человечества.</p>
-							<a href="" class="newsBoxFull">Подробнее</a>
-							<span class="newsBoxDate">00.00.0000</span>
-						</div>
-					</div>
-					<div class="newsBox elBlock">
-						<img src="" alt="">
-						<div class="newsBoxInfo">
-							<span class="newsBoxTitle">Пушкин… Булгаков… Белинский…</span>
-							<p class="newsBoxDesc">В фондах Книжной палаты представлены произведения выдающихся классиков мировой литературы, среди которых Александр Пушкин, Михаил Булгаков, Лев Толстой, Антон Чехов и многие другие авторы. Их произведения продолжают вдохновлять читателей разных поколений и занимают особое место в культурном наследии человечества.</p>
-							<a href="" class="newsBoxFull">Подробнее</a>
-							<span class="newsBoxDate">00.00.0000</span>
-						</div>
-					</div>
-					<div class="newsBox elBlock">
-						<img src="" alt="">
-						<div class="newsBoxInfo">
-							<span class="newsBoxTitle">Пушкин… Булгаков… Белинский…</span>
-							<p class="newsBoxDesc">В фондах Книжной палаты представлены произведения выдающихся классиков мировой литературы, среди которых Александр Пушкин, Михаил Булгаков, Лев Толстой, Антон Чехов и многие другие авторы. Их произведения продолжают вдохновлять читателей разных поколений и занимают особое место в культурном наследии человечества.</p>
-							<a href="" class="newsBoxFull">Подробнее</a>
-							<span class="newsBoxDate">00.00.0000</span>
-						</div>
-					</div>
-					<div class="newsBox elBlock">
-						<img src="" alt="">
-						<div class="newsBoxInfo">
-							<span class="newsBoxTitle">Пушкин… Булгаков… Белинский…</span>
-							<p class="newsBoxDesc">В фондах Книжной палаты представлены произведения выдающихся классиков мировой литературы, среди которых Александр Пушкин, Михаил Булгаков, Лев Толстой, Антон Чехов и многие другие авторы. Их произведения продолжают вдохновлять читателей разных поколений и занимают особое место в культурном наследии человечества.</p>
-							<a href="" class="newsBoxFull">Подробнее</a>
-							<span class="newsBoxDate">00.00.0000</span>
-						</div>
-					</div>
-					<div class="newsBox elBlock">
-						<img src="" alt="">
-						<div class="newsBoxInfo">
-							<span class="newsBoxTitle">Пушкин… Булгаков… Белинский…</span>
-							<p class="newsBoxDesc">В фондах Книжной палаты представлены произведения выдающихся классиков мировой литературы, среди которых Александр Пушкин, Михаил Булгаков, Лев Толстой, Антон Чехов и многие другие авторы. Их произведения продолжают вдохновлять читателей разных поколений и занимают особое место в культурном наследии человечества.</p>
-							<a href="" class="newsBoxFull">Подробнее</a>
-							<span class="newsBoxDate">00.00.0000</span>
-						</div>
-					</div>
-					<div class="newsBox elBlock" style="margin-bottom: 0px;">
-						<img src="" alt="">
-						<div class="newsBoxInfo">
-							<span class="newsBoxTitle">Пушкин… Булгаков… Белинский…</span>
-							<p class="newsBoxDesc">В фондах Книжной палаты представлены произведения выдающихся классиков мировой литературы, среди которых Александр Пушкин, Михаил Булгаков, Лев Толстой, Антон Чехов и многие другие авторы. Их произведения продолжают вдохновлять читателей разных поколений и занимают особое место в культурном наследии человечества.</p>
-							<a href="" class="newsBoxFull">Подробнее</a>
-							<span class="newsBoxDate">00.00.0000</span>
-						</div>
-					</div>
+				</div> -->
+			</div>
 
 			<div class="sectionPadding"></div>
 
@@ -204,7 +123,8 @@
 		<span>© 2026 Государственная книжная палата при Министерстве культуры, информации и молодежной политики Кыргызской Республики</span>
 	</footer>
 	<script src="/resource/js/burger.js"></script>
-
+	<script src="/resource/js/lang.js"></script>
+	<script src="/resource/js/newsGenerator.js"></script>
 	<script src="/resource/js/pagination.js"></script>
 </body>
 </html>

@@ -4,13 +4,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Летописи</title>
+	<title data-lang='titleChronicle'>Летописи</title>
 	<link rel="icon" href="/resource/icon/logo.ico">
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.2/css/all.css">
 
 	<link rel="stylesheet" href="/resource/css/style.css">
-
 </head>
 <body>
 	<div class="container">
@@ -21,8 +20,8 @@
 
 			<div class="header__1">
 				<div class="selectLang" style="display:flex;justify-content: space-between;width:145px;">
-					<a href="#" class="link active" style="margin: 0;">Рус</a>
-					<a href="#" class="link" style="margin: 0;">Кыр</a>
+					<button onclick="setLanguage('RU')" class="link active RU" style="margin: 0;">Рус</button>
+					<button onclick="setLanguage('KY')" class="link KY" style="margin: 0;">Кыр</button>
 				</div>
 				<div class="contact">
 					<img src="/resource/icon/phone.png" alt="" class="icon">
@@ -37,27 +36,27 @@
 				</div>
 			</div>
 			<div class="header__nav">
-				<a href="/index.html" class="link">Главная</a>
-				<a href="/templates/About-us/index.html" class="link">О нас</a>
-				<a href="/templates/Departments/index.html" class="link">Отделы</a>
-				<a href="/templates/Book-catalog/index.html" class="link">Книги</a>
-				<a href="/templates/Chronicles/index.html" class="link active">Летописи</a>
-				<a href="/templates/Online-services/index.html" class="link">Online услуги</a>
-				<a href="/templates/News/index.html" class="link">Новости</a>
-				<a href="/Contacts.html" class="link">Контакты</a>
+				<a data-lang="nav-Main"	href="/index.html" class="link"></a>
+				<a data-lang="nav-AboutUs"	href="/templates/About-us/index.html" class="link"></a>
+				<a data-lang="nav-Departments"	href="/templates/Departments/index.html" class="link"></a>
+				<a data-lang="nav-Book"	href="/templates/Book-catalog/index.html" class="link"></a>
+				<a data-lang="nav-Chronicle"	href="/templates/Chronicles/index.html" class="link active"></a>
+				<a data-lang="nav-OnlineService"	href="/templates/Online-services/index.html" class="link"></a>
+				<a data-lang="nav-News"	href="/templates/News/index.html" class="link"></a>
+				<a data-lang="nav-Contacts"	href="/Contacts.html" class="link"></a>
 				<!-- <a href="/Application.html" class="link">Подача заявки</a> -->
 			</div>
 		</div>
 		<div id="burger">
 			<div>
-				<a href="/index.html" class="link">Главная</a>
-				<a href="/templates/About-us/index.html" class="link">О нас</a>
-				<a href="/templates/Departments/index.html" class="link">Отделы</a>
-				<a href="/templates/Book-catalog/index.html" class="link">Книги</a>
-				<a href="/templates/Chronicles/index.html" class="link active">Летописи</a>
-				<a href="/templates/Online-services/index.html" class="link">Online услуги</a>
-				<a href="/templates/News/index.html" class="link">Новости</a>
-				<a href="/Contacts.html" class="link">Контакты</a>
+				<a data-lang="nav-Main"	href="/index.html" class="link"></a>
+				<a data-lang="nav-AboutUs"	href="/templates/About-us/index.html" class="link"></a>
+				<a data-lang="nav-Departments"	href="/templates/Departments/index.html" class="link"></a>
+				<a data-lang="nav-Book"	href="/templates/Book-catalog/index.html" class="link"></a>
+				<a data-lang="nav-Chronicle"	href="/templates/Chronicles/index.html" class="link active"></a>
+				<a data-lang="nav-OnlineService"	href="/templates/Online-services/index.html" class="link"></a>
+				<a data-lang="nav-News"	href="/templates/News/index.html" class="link"></a>
+				<a data-lang="nav-Contacts"	href="/Contacts.html" class="link"></a>
 				<!-- <a href="/Application.html" class="link">Подача заявки</a> -->
 			</div>
 
@@ -74,7 +73,7 @@
 
 		<div class="main">
 			<section class="bookCatalog">
-				<div class="elBook elBlock">
+				<!-- <div class="elBook elBlock">
 					<img src="chronicles/leto.png" alt="">
 					<div class="elBookInfo">
 						<span class="elBookTitle">Название: <span style="color: #000;"> Плаха</span></span>
@@ -83,88 +82,7 @@
 						<p class="elBookDesc">Описание: <span style="color: #000;">Повесть о любви, верности и жизненных испытаниях. Трогательная история, наполненная глубокими чувствами, национальным колоритом и философскими размышлениями о человеческих ценностях. Произведение является одним из самых известных в творчестве Чингиза Айтматова и занимает особое место в кыргызской и мировой литературе</span></p>
 						<a href="" target="_blank" rel="noopener noreferrer" style="color: #3158B0; cursor: pointer; width: auto; margin-top: auto;">Открыть книгу</a>
 					</div>
-				</div>
-				<div class="elBook elBlock">
-					<img src="books/book.jpg" alt="">
-					<div class="elBookInfo">
-						<span class="elBookTitle">Название: <span style="color: #000;"> Тополек мой в красной косынке</span></span>
-						<span class="elBookAuthor">Автор: <span style="color: #000;">Чингиз Айтматов</span></span>
-						<br>
-						<p class="elBookDesc">Описание: <span style="color: #000;">Повесть о любви, верности и жизненных испытаниях. Трогательная история, наполненная глубокими чувствами, национальным колоритом и философскими размышлениями о человеческих ценностях. Произведение является одним из самых известных в творчестве Чингиза Айтматова и занимает особое место в кыргызской и мировой литературе</span></p>
-					</div>
-				</div>
-				<div class="elBook elBlock">
-					<img src="books/book.jpg" alt="">
-					<div class="elBookInfo">
-						<span class="elBookTitle">Название: <span style="color: #000;"> Тополек мой в красной косынке</span></span>
-						<span class="elBookAuthor">Автор: <span style="color: #000;">Чингиз Айтматов</span></span>
-						<br>
-						<p class="elBookDesc">Описание: <span style="color: #000;">Повесть о любви, верности и жизненных испытаниях. Трогательная история, наполненная глубокими чувствами, национальным колоритом и философскими размышлениями о человеческих ценностях. Произведение является одним из самых известных в творчестве Чингиза Айтматова и занимает особое место в кыргызской и мировой литературе</span></p>
-					</div>
-				</div>
-				<div class="elBook elBlock">
-					<img src="books/book.jpg" alt="">
-					<div class="elBookInfo">
-						<span class="elBookTitle">Название: <span style="color: #000;"> Тополек мой в красной косынке</span></span>
-						<span class="elBookAuthor">Автор: <span style="color: #000;">Чингиз Айтматов</span></span>
-						<br>
-						<p class="elBookDesc">Описание: <span style="color: #000;">Повесть о любви, верности и жизненных испытаниях. Трогательная история, наполненная глубокими чувствами, национальным колоритом и философскими размышлениями о человеческих ценностях. Произведение является одним из самых известных в творчестве Чингиза Айтматова и занимает особое место в кыргызской и мировой литературе</span></p>
-					</div>
-				</div>
-				<div class="elBook elBlock">
-					<img src="books/book.jpg" alt="">
-					<div class="elBookInfo">
-						<span class="elBookTitle">Название: <span style="color: #000;"> Тополек мой в красной косынке</span></span>
-						<span class="elBookAuthor">Автор: <span style="color: #000;">Чингиз Айтматов</span></span>
-						<br>
-						<p class="elBookDesc">Описание: <span style="color: #000;">Повесть о любви, верности и жизненных испытаниях. Трогательная история, наполненная глубокими чувствами, национальным колоритом и философскими размышлениями о человеческих ценностях. Произведение является одним из самых известных в творчестве Чингиза Айтматова и занимает особое место в кыргызской и мировой литературе</span></p>
-					</div>
-				</div>
-				<div class="elBook elBlock">
-					<img src="books/book.jpg" alt="">
-					<div class="elBookInfo">
-						<span class="elBookTitle">Название: <span style="color: #000;"> Тополек мой в красной косынке</span></span>
-						<span class="elBookAuthor">Автор: <span style="color: #000;">Чингиз Айтматов</span></span>
-						<br>
-						<p class="elBookDesc">Описание: <span style="color: #000;">Повесть о любви, верности и жизненных испытаниях. Трогательная история, наполненная глубокими чувствами, национальным колоритом и философскими размышлениями о человеческих ценностях. Произведение является одним из самых известных в творчестве Чингиза Айтматова и занимает особое место в кыргызской и мировой литературе</span></p>
-					</div>
-				</div>
-				<div class="elBook elBlock">
-					<img src="books/book.jpg" alt="">
-					<div class="elBookInfo">
-						<span class="elBookTitle">Название: <span style="color: #000;"> Тополек мой в красной косынке</span></span>
-						<span class="elBookAuthor">Автор: <span style="color: #000;">Чингиз Айтматов</span></span>
-						<br>
-						<p class="elBookDesc">Описание: <span style="color: #000;">Повесть о любви, верности и жизненных испытаниях. Трогательная история, наполненная глубокими чувствами, национальным колоритом и философскими размышлениями о человеческих ценностях. Произведение является одним из самых известных в творчестве Чингиза Айтматова и занимает особое место в кыргызской и мировой литературе</span></p>
-					</div>
-				</div>
-				<div class="elBook elBlock">
-					<img src="books/book.jpg" alt="">
-					<div class="elBookInfo">
-						<span class="elBookTitle">Название: <span style="color: #000;"> Тополек мой в красной косынке</span></span>
-						<span class="elBookAuthor">Автор: <span style="color: #000;">Чингиз Айтматов</span></span>
-						<br>
-						<p class="elBookDesc">Описание: <span style="color: #000;">Повесть о любви, верности и жизненных испытаниях. Трогательная история, наполненная глубокими чувствами, национальным колоритом и философскими размышлениями о человеческих ценностях. Произведение является одним из самых известных в творчестве Чингиза Айтматова и занимает особое место в кыргызской и мировой литературе</span></p>
-					</div>
-				</div>
-				<div class="elBook elBlock">
-					<img src="books/book.jpg" alt="">
-					<div class="elBookInfo">
-						<span class="elBookTitle">Название: <span style="color: #000;"> Тополек мой в красной косынке</span></span>
-						<span class="elBookAuthor">Автор: <span style="color: #000;">Чингиз Айтматов</span></span>
-						<br>
-						<p class="elBookDesc">Описание: <span style="color: #000;">Повесть о любви, верности и жизненных испытаниях. Трогательная история, наполненная глубокими чувствами, национальным колоритом и философскими размышлениями о человеческих ценностях. Произведение является одним из самых известных в творчестве Чингиза Айтматова и занимает особое место в кыргызской и мировой литературе</span></p>
-					</div>
-				</div>
-				<div class="elBook elBlock">
-					<img src="books/book.jpg" alt="">
-					<div class="elBookInfo">
-						<span class="elBookTitle">Название: <span style="color: #000;"> Тополек мой в красной косынке</span></span>
-						<span class="elBookAuthor">Автор: <span style="color: #000;">Чингиз Айтматов</span></span>
-						<br>
-						<p class="elBookDesc">Описание: <span style="color: #000;">Повесть о любви, верности и жизненных испытаниях. Трогательная история, наполненная глубокими чувствами, национальным колоритом и философскими размышлениями о человеческих ценностях. Произведение является одним из самых известных в творчестве Чингиза Айтматова и занимает особое место в кыргызской и мировой литературе</span></p>
-					</div>
-				</div>
+				</div> -->
 			</section>
 		</div>
 	</div>
@@ -192,6 +110,7 @@
 		<span>© 2026 Государственная книжная палата при Министерстве культуры, информации и молодежной политики Кыргызской Республики</span>
 	</footer>
 	<script src="/resource/js/burger.js"></script>
+	<script src="/resource/js/lang.js"></script>
 
 	<script src="/resource/js/pagination.js"></script>
 </body>
