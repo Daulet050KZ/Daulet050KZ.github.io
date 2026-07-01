@@ -407,6 +407,7 @@ a[href="/Application.html"]:hover {
 	flex-direction: column;
 	text-align: center;
 	margin: 5px;
+	width: 197px;
 }
 
 .listEl > img {
