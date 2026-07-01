@@ -1,5 +1,5 @@
 let items = []
-const itemsPerPage = 10
+const itemsPerPage = 20
 
 const pageLeft = document.getElementById('pageLeft')
 const pageRight = document.getElementById('pageRight')

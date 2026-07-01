@@ -324,11 +324,11 @@ a[href="/Application.html"]:hover {
 .NewsPage > span {
 	color: #2E54A9;
 	font-size: 36px;
+	font-weight: 700;
 }
 
-.NewsPage > p,
-.NewsPage-bottom > span {
-	color: #2E54A9;
+.NewsPage > p {
+	color: #000;
 	font-size: 20px;
 	text-align: justify;
 }
@@ -344,7 +344,12 @@ a[href="/Application.html"]:hover {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 10px;
+}
 
+.NewsPage-bottom > span {
+	color: #2E54A9;
+	font-size: 20px;
+	text-align: justify;
 }
 
 .NewsPage-bottom > div > button {
