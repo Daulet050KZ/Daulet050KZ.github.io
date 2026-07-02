@@ -20,10 +20,25 @@ async function loadLanguage(lang) {
 }
 
 function setLanguage(lang) {
-    loadLanguage(lang);
-    updateLanguageButtons();
-    updateBookLang()
-    loadStaff(lang)
+    if (typeof loadLanguage === 'function') {
+        loadLanguage(lang);
+    }
+
+    if (typeof updateLanguageButtons === 'function') {
+        updateLanguageButtons();
+    }
+
+    if (typeof updateBookLang === 'function') {
+        updateBookLang();
+    }
+
+    if (typeof changeLang === 'function') {
+        changeLang(lang);
+    }
+
+    if (typeof loadStaff === 'function') {
+        loadStaff(lang);
+    }
 }
 
 function updateLanguageButtons() {
@@ -63,9 +78,24 @@ function updateBookLang(page){
 document.addEventListener('DOMContentLoaded', () => {
     const savedLang = localStorage.getItem('language') || 'RU';
 
-    loadLanguage(savedLang);
-    updateLanguageButtons();
-    updateBookLang()
-    loadStaff(savedLang)
+    if (typeof loadLanguage === 'function') {
+        loadLanguage(savedLang);
+    }
+
+    if (typeof updateLanguageButtons === 'function') {
+        updateLanguageButtons();
+    }
+
+    if (typeof updateBookLang === 'function') {
+        updateBookLang();
+    }
+
+    if (typeof changeLang === 'function') {
+        changeLang(savedLang);
+    }
+
+    if (typeof loadStaff === 'function') {
+        loadStaff(savedLang);
+    }
 });
 
